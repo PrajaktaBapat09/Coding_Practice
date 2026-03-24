@@ -64,3 +64,25 @@ int main()
 
 //Expected Output: 7 10 12
 //My Output: 7 10 12
+
+//Problem 4: Print elements of array which are unique and remove the duplicate elements
+#include <iostream>
+using namespace std;
+//Print only the unique elements and remove the duplicates
+int main()
+{
+    int array [] = {1,2,2,3,4,4,5};
+    int size = 7;
+    int i;
+    for(i=0;i<size;i++)
+    {
+        if(array[i]!=array[i-1])
+        {
+            cout<<array[i]<<" ";
+        }
+    }
+    return 0;
+}
+
+//Expected Output: 1 2 3 4 5
+//My Output: 1 2 3 4 5
