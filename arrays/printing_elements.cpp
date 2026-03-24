@@ -86,3 +86,22 @@ int main()
 
 //Expected Output: 1 2 3 4 5
 //My Output: 1 2 3 4 5
+
+//Problem 5: Print alternate elements from the end of the array
+#include <iostream>
+using namespace std;
+//Print alternate elements from end
+int main()
+{
+    int array [] = {10,20,30,40,50,60};
+    int size = 6;
+    int i;
+    for(i=size-1;i>=0;i-=2)
+    {
+        cout<<array[i]<<" ";
+    }
+    return 0;
+}
+
+//Expected Output: 60 40 20
+//My Output: 60 40 20
