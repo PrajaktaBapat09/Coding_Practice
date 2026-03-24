@@ -41,3 +41,26 @@ int main()
 }
 //Expected Output: 45 35 25 15 5
 //My Output: 45 35 25 15 5
+
+//Problem 3: Print elements of the array which are greater than the previous element
+
+#include <iostream>
+using namespace std;
+//Print elements greater than the previous element
+int main()
+{
+    int array [] = {5,7,6,10,8,12};
+    int size = 6;
+    int i;
+    for(i=0;i<size;i++)
+    {
+        if(array[i]>array[i-1])
+        {
+            cout<<array[i]<<" ";
+        }
+    }
+    return 0;
+}
+
+//Expected Output: 7 10 12
+//My Output: 7 10 12
