@@ -46,3 +46,29 @@ int main()
 
 //Expected Output: 3
 //My Output: 3
+
+//Problem 3: Find the index of first occurrence of the target element in the given array
+#include <iostream>
+using namespace std;
+//To find the first occurence of a given element in the array
+int main()
+{
+    int array [] = {5,3,7,3,9};
+    int i;
+    int size = 5;
+    int target = 3;
+    int index;
+    for(i=0;i<size;i++)
+    {
+        if(array[i]==target)
+        {
+            index=i;
+            break;
+        }
+    }
+    cout<<index;
+    return 0;
+}
+
+//Expected Output: 1
+//My Output : 1
