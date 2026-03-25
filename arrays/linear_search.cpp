@@ -72,3 +72,28 @@ int main()
 
 //Expected Output: 1
 //My Output : 1
+
+//Problem 4: To find the all the positions of the target element given in the array
+#include <iostream>
+using namespace std;
+//To find the all the positions of the target element given in the array
+int main()
+{
+    int array[]={2,4,2,6,2,8};
+    int i;
+    int size = 6;
+    int target = 2;
+    int index;
+    for(i=0;i<size;i++)
+    {
+        if(array[i]==target)
+        {
+            index = i;
+            cout<<index<<" ";
+        }
+    }
+    return 0;
+}
+
+//Expected Output: 0 2 4
+//My Output : 0 2 4
