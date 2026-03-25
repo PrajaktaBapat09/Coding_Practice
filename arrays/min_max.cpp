@@ -78,3 +78,37 @@ int main()
 
 //Expected Output: 9 8 1
 //My Output: 9 8 1
+
+//Problem 4: Finding the index of max and min element of the given array
+#include <iostream>
+#include <limits.h>
+using namespace std;
+//Finding the index of minimum and maximum element of the array
+int main()
+{
+    int array [] = {12,5,8,20,3,15};
+    int i;
+    int size = 6;
+    int max = INT_MIN;
+    int min = INT_MAX;
+    int minindex = -1;
+    int maxindex = -1;
+    for(i=0;i<size;i++)
+    {
+        if(array[i]>max)
+        {
+            max = array[i];
+            maxindex = i;
+        }
+        if(array[i]<min)
+        {
+            min = array[i];
+            minindex = i;
+        }
+    }    
+    cout<<maxindex<<endl;
+    cout<<minindex<<endl;
+    return 0;
+}
+//Expected Output: 3 4
+//My Output: 3 4
